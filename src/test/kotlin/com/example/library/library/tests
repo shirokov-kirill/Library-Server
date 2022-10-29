@@ -1,0 +1,49 @@
+###
+GET http://localhost:8081/book
+
+###
+POST http://localhost:8081/book
+Content-Type: application/json
+
+{
+  "_title": "True Stories",
+  "_description": "Once upon a time",
+  "_author": "Robin",
+  "_isbn": "khjkgd-354-flg-2",
+  "_printYear": "2021",
+  "_readAlready": "False"
+}
+
+###
+DELETE http://localhost:8081/book
+Content-Type: application/json
+
+{
+  "_title": "True Stories",
+  "_description": "Once upon a time",
+  "_author": "Robin",
+  "_isbn": "khjkgd-354-flg-2",
+  "_printYear": "2021",
+  "_readAlready": "False"
+}
+
+###
+GET http://localhost:8081/book/author/Kirill
+
+###
+GET http://localhost:8081/book/author/Robin
+
+###
+GET http://localhost:8081/book/author/Marta
+
+###
+GET http://localhost:8081/book/printYear/2022
+
+###
+GET http://localhost:8081/book/printYear/2021
+
+###
+GET http://localhost:8081/book/printYear/2020
+
+###
+GET http://localhost:8081/book/id/2
